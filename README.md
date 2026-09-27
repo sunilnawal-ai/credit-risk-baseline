@@ -102,7 +102,7 @@ Interpretation:
 
 ---
 
-### Day 2 — Feature Engineering + Preprocessing
+## Day 2 — Feature Engineering + Preprocessing
 - Scaling  
 - Encoding  
 - Leakage‑free pipeline  
@@ -110,11 +110,11 @@ Interpretation:
 
 ---
 
-### Day 3 — Random Forest vs XGBoost (Credit Risk Modeling)
+## Day 3 — Random Forest vs XGBoost (Credit Risk Modeling)
 
 **Objective:** Compare three models — Logistic Regression, Random Forest, and XGBoost — on a credit risk dataset to understand performance, feature importance, and model selection tradeoffs.
 
-#### Key Results
+### Key Results
 - **AUC Scores:**  
   - Logistic Regression: 0.70  
   - Random Forest: 0.76  
@@ -124,12 +124,12 @@ Interpretation:
   - Random Forest emphasizes continuous, stable features (e.g., BILL_AMT1, AGE).  
   - XGBoost concentrates on ordinal delinquency indicators (PAY_0, PAY_1, PAY_2).  
 
-#### PM Interpretation
+### PM Interpretation
 - Logistic Regression provides a transparent baseline.  
 - Random Forest offers stability and robustness for production.  
 - XGBoost delivers the strongest predictive performance by leveraging gradient boosting.  
 
-#### Deliverables
+### Deliverables
 - Clean notebook with model training, evaluation, and plots  
 - PM-level interpretation section  
 - GitHub commit documenting modeling progress  
