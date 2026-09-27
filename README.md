@@ -70,6 +70,21 @@ This makes it ideal for imbalanced datasets.
 
 ---
 
+## 🧱 Notebook Structure
+
+1. Title + Overview
+2. Load Libraries
+3. Load Dataset
+4. Train/Test Split (Stratified)
+5. Preprocessing (Placeholder for Day 2)
+6. Baseline Model — Logistic Regression
+7. Evaluation Metrics
+8. Confusion Matrix
+9. Day 1 Summary
+10. Next Steps (Day 2 Preview)
+    
+---
+
 ## 📈 Day 1 Results
 Baseline model performance:
 
@@ -87,30 +102,41 @@ Interpretation:
 
 ---
 
-## 🧱 Notebook Structure
-
-1. Title + Overview
-2. Load Libraries
-3. Load Dataset
-4. Train/Test Split (Stratified)
-5. Preprocessing (Placeholder for Day 2)
-6. Baseline Model — Logistic Regression
-7. Evaluation Metrics
-8. Confusion Matrix
-9. Day 1 Summary
-10. Next Steps (Day 2 Preview)
-
-
----
-
-## 🚀 Roadmap — What Comes Next
 ### Day 2 — Feature Engineering + Preprocessing
 - Scaling  
 - Encoding  
 - Leakage‑free pipeline  
 - Correlation analysis  
 
-### Day 3 — Tree‑Based Models  
+---
+
+### Day 3 — Random Forest vs XGBoost (Credit Risk Modeling)
+
+**Objective:** Compare three models — Logistic Regression, Random Forest, and XGBoost — on a credit risk dataset to understand performance, feature importance, and model selection tradeoffs.
+
+#### Key Results
+- **AUC Scores:**  
+  - Logistic Regression: 0.70  
+  - Random Forest: 0.76  
+  - XGBoost: 0.77  
+
+- **Feature Importance Differences:**  
+  - Random Forest emphasizes continuous, stable features (e.g., BILL_AMT1, AGE).  
+  - XGBoost concentrates on ordinal delinquency indicators (PAY_0, PAY_1, PAY_2).  
+
+#### PM Interpretation
+- Logistic Regression provides a transparent baseline.  
+- Random Forest offers stability and robustness for production.  
+- XGBoost delivers the strongest predictive performance by leveraging gradient boosting.  
+
+#### Deliverables
+- Clean notebook with model training, evaluation, and plots  
+- PM-level interpretation section  
+- GitHub commit documenting modeling progress  
+
+---
+
+## 🚀 Roadmap — What Comes Next
 ### Day 4 — Threshold Tuning  
 ### Day 5 — ROC/AUC Deep Dive  
 ### Day 6 — Model Comparison  
@@ -126,7 +152,8 @@ credit-risk-baseline/
 ├── data/
 ├── notebooks/
 │   └── day1_baseline_model.ipynb
-│
+    └── day2_feature_engineering.ipynb
+    └── day3_LR_RF_XGB.ipynb
 ├── README.md
 └── .gitignore
 
